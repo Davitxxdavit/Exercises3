@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Exercise - Complete Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin: 15px 0;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"]:hover {
+            background-color: #da190b;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        hr {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADINGS SECTION -->
+    <header>
+        <h1>HTML Complete Learning Exercise</h1>
+        <p><em>A comprehensive guide to practice all essential HTML tags</em></p>
+        <hr>
+    </header>
+
+    <!-- HEADINGS DEMONSTRATION -->
+    <section>
+        <h2>1. Headings (h1 - h6)</h2>
+        <p>HTML provides six levels of headings:</p>
+        <h1>This is Heading 1 (h1)</h1>
+        <h2>This is Heading 2 (h2)</h2>
+        <h3>This is Heading 3 (h3)</h3>
+        <h4>This is Heading 4 (h4)</h4>
+        <h5>This is Heading 5 (h5)</h5>
+        <h6>This is Heading 6 (h6)</h6>
+    </section>
+
+    <!-- PARAGRAPHS SECTION -->
+    <section>
+        <h2>2. Paragraphs and Text Formatting</h2>
+        <p>This is a regular paragraph. The paragraph tag (p) is used to define blocks of text. 
+           It automatically adds spacing before and after the content.</p>
+        
+        <p>You can use <b>bold text</b> and <strong>strong text</strong> to emphasize content.</p>
+        
+        <p>You can also use <i>italic text</i> and <em>emphasized text</em> for different styling.</p>
+        
+        <p>Here are more formatting options:</p>
+        <ul>
+            <li><u>Underlined text</u> using the u tag</li>
+            <li><mark>Highlighted text</mark> using the mark tag</li>
+            <li><small>Small text</small> using the small tag</li>
+            <li><del>Deleted text</del> using the del tag</li>
+            <li><ins>Inserted text</ins> using the ins tag</li>
+            <li>This is <sub>subscript</sub> and this is <sup>superscript</sup></li>
+            <li><code>Computer code</code> using the code tag</li>
+            <li><kbd>Keyboard input</kbd> using the kbd tag</li>
+            <li><samp>Sample output</samp> using the samp tag</li>
+            <li><var>Variable</var> using the var tag</li>
+        </ul>
+
+        <p>You can create a line break<br>using the br tag.</p>
+        
+        <blockquote>
+            "This is a blockquote. It is typically used for longer quotations and is displayed with indentation."
+        </blockquote>
+
+        <p>Here's an inline quote: <q>This is a short quote using the q tag.</q></p>
+
+        <pre>
+This is preformatted text.
+    It preserves    spaces
+        and line breaks
+            exactly as written.
+        </pre>
+    </section>
+
+    <!-- LISTS SECTION -->
+    <section>
+        <h2>3. Lists</h2>
+        
+        <h3>Unordered List (ul)</h3>
+        <ul>
+            <li>HTML - HyperText Markup Language</li>
+            <li>CSS - Cascading Style Sheets</li>
+            <li>JavaScript - Programming Language</li>
+            <li>Nested List:
+                <ul>
+                    <li>React</li>
+                    <li>Vue</li>
+                    <li>Angular</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Ordered List (ol)</h3>
+        <ol>
+            <li>Open your text editor</li>
+            <li>Create a new HTML file</li>
+            <li>Write your HTML code</li>
+            <li>Save the file with .html extension</li>
+            <li>Open in a web browser</li>
+        </ol>
+
+        <h3>Description List (dl)</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>A markup language for creating web pages</dd>
+            
+            <dt>CSS</dt>
+            <dd>A style sheet language used for describing the presentation of a document</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>A programming language that enables interactive web pages</dd>
+        </dl>
+    </section>
+
+    <!-- TABLES SECTION -->
+    <section>
+        <h2>4. Tables</h2>
+        <p>Tables are used to display data in rows and columns:</p>
+        
+        <table>
+            <caption><strong>Student Grade Report</strong></caption>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>John Smith</td>
+                    <td>Mathematics</td>
+                    <td>95</td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Emma Johnson</td>
+                    <td>Physics</td>
+                    <td>88</td>
+                    <td>Good</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Michael Brown</td>
+                    <td>Chemistry</td>
+                    <td>92</td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Sarah Davis</td>
+                    <td>Biology</td>
+                    <td>85</td>
+                    <td>Good</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Average Grade</strong></td>
+                    <td colspan="2"><strong>90.0</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- FORMS SECTION -->
+    <section>
+        <h2>5. Forms and Input Elements</h2>
+        <p>Forms are used to collect user input:</p>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Student Registration Form</legend>
+                
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required>
+                
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dateofbirth">
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="5" max="100" placeholder="Enter your age">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+                
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="favcolor">
+                
+                <label for="range">Experience Level (1-10):</label>
+                <input type="range" id="range" name="experience" min="1" max="10">
+                
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <br><br>
+                
+                <label>Interests:</label>
+                <input type="checkbox" id="sports" name="interest1" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interest2" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="reading" name="interest3" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="coding" name="interest4" value="coding">
+                <label for="coding">Coding</label>
+                <br><br>
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="india">India</option>
+                </select>
+                
+                <label for="file">Upload Document:</label>
+                <input type="file" id="file" name="document">
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+                
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    Subscribe to newsletter
+                </label>
+                <br><br>
+                
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Reset Form">
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- LINKS AND IMAGES SECTION -->
+    <section>
+        <h2>6. Links and Media</h2>
+        
+        <h3>Hyperlinks</h3>
+        <p>Here are different types of links:</p>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">External Link (opens in new tab)</a></li>
+            <li><a href="#top">Internal Link (to top of page)</a></li>
+            <li><a href="mailto:student@example.com">Email Link</a></li>
+            <li><a href="tel:+1234567890">Phone Link</a></li>
+        </ul>
+
+        <h3>Images</h3>
+        <p>Image example (placeholder):</p>
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder Image" width="400" height="200">
+        
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video</h3>
+        <video width="400" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- SEMANTIC HTML SECTION -->
+    <section>
+        <h2>7. Semantic HTML Elements</h2>
+        
+        <article>
+            <h3>Article Element</h3>
+            <p>The article element represents a self-contained composition in a document, page, or site.</p>
+        </article>
+
+        <aside>
+            <h4>Aside Element</h4>
+            <p>This is an aside element, typically used for content that is tangentially related to the main content.</p>
+        </aside>
+
+        <details>
+            <summary>Click to expand details</summary>
+            <p>This is hidden content that can be shown or hidden. The details and summary elements are useful for creating collapsible content.</p>
+        </details>
+
+        <figure>
+            <img src="https://via.placeholder.com/300x150" alt="Example diagram">
+            <figcaption>Figure 1: Example of a figure with caption</figcaption>
+        </figure>
+    </section>
+
+    <!-- OTHER USEFUL TAGS -->
+    <section>
+        <h2>8. Other Useful HTML Elements</h2>
+        
+        <h3>Horizontal Rule</h3>
+        <p>Above this line</p>
+        <hr>
+        <p>Below this line</p>
+
+        <h3>Abbreviations</h3>
+        <p>The <abbr title="World Wide Web">WWW</abbr> was invented by Tim Berners-Lee.</p>
+
+        <h3>Address</h3>
+        <address>
+            Written by Student Learning Center<br>
+            123 Education Street<br>
+            Learning City, LC 12345<br>
+            USA
+        </address>
+
+        <h3>Progress Bar</h3>
+        <label for="progress">Course Progress:</label>
+        <progress id="progress" value="70" max="100">70%</progress>
+
+        <h3>Meter</h3>
+        <label for="disk">Disk Usage:</label>
+        <meter id="disk" value="0.6">60%</meter>
+
+        <h3>Time Element</h3>
+        <p>The exam is scheduled for <time datetime="2025-10-20">October 20, 2025</time>.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <h2>Summary</h2>
+        <p>This page demonstrates the following HTML elements:</p>
+        <ul>
+            <li><strong>Headings:</strong> h1, h2, h3, h4, h5, h6</li>
+            <li><strong>Text:</strong> p, span, br, hr</li>
+            <li><strong>Formatting:</strong> b, strong, i, em, u, mark, small, del, ins, sub, sup, code, pre, blockquote, q</li>
+            <li><strong>Lists:</strong> ul, ol, li, dl, dt, dd</li>
+            <li><strong>Tables:</strong> table, tr, td, th, thead, tbody, tfoot, caption</li>
+            <li><strong>Forms:</strong> form, input (text, email, password, radio, checkbox, date, number, color, range, file, submit, reset), textarea, select, option, label, fieldset, legend</li>
+            <li><strong>Links & Media:</strong> a, img, audio, video</li>
+            <li><strong>Semantic:</strong> header, footer, nav, section, article, aside, figure, figcaption, details, summary</li>
+            <li><strong>Other:</strong> div, abbr, address, time, progress, meter</li>
+        </ul>
+        <p><small>&copy; 2025 HTML Learning Exercise. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
